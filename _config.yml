@@ -4,10 +4,10 @@
 
 # Site
 title: 不可及
-subtitle: 识时务的中年人
+subtitle: 识时务者
 description: 可爱
 keywords: [半个我]
-author: 心理咨询师
+author: Hey-f
 language:
 timezone:
 
@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+baidu_tongji: 382ac27e195392c0cc8aaf4929019a82
 
 # Writing
 new_post_name: :title.md # File name of new posts
