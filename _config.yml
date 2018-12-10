@@ -79,4 +79,7 @@ theme: yelee
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git                                                      # 设置发布类型，如git     
+  repository: git@github.com:heyfgirl/heyfgirl.github.io.git   # 设置repository对应的链接
+  branch: master                                                 # 设置提交到的分支
+  message: Site updated at {{ now("YYYY-MM-DD HH:mm:ss") }}      # 设置我们提交的信息
