@@ -182,8 +182,10 @@ tagcloud: true
 # Blogroll, Link exchange | 友情链接
 friends:
   Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
+  # GitHub: https://pages.github.com/
   MOxFIVE: http://moxfive.xyz/
+  ZY: https://bengbu-yuezhang.github.io/
+  Hanrea: http://blog.hanrea.com/
 #friends: false
 
 #是否开启“关于我”。
