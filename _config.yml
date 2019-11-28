@@ -29,6 +29,13 @@ i18n_dir: :lang
 skip_render:
 baidu_tongji: 382ac27e195392c0cc8aaf4929019a82
 
+disqus_shortname: halfmy
+disqus_proxy:
+  shortname: halfmy
+  username: halfmy
+  host: halfmy.com/disqus
+  port: 80
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
