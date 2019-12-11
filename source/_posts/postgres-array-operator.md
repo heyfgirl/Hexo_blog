@@ -24,3 +24,6 @@ sf|sfs|sdf|sdfd
 
 
 [postgresql数组操作符与函数](https://blog.csdn.net/pg_hgdb/article/details/79483767)
+
+postgres to_number(text,text2)  //text2 = 999999.99 为保留两位有效数据，不然将不识别小数点，只认识数字类型
+select cast("extension"#>>'{lat}' as double precision) as lat, cast("extension"#>>'{lng}' as numeric) as lng from ads where id=6;

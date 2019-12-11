@@ -40,7 +40,11 @@ tags:
 postgresql.conf文件配置
 ```javascript
     listen_addresses = '*'
-    //监听地址，默认*为当前服务器地址
+    //监听地址，默认*为当前服务器地址 []docker内部绑定容器需要使用*号 不能使用127  127 是相对于母机的如果跨docker没用 docker内部指向不一样
+    // docker使用需要开启
+    // sysctl net.ipv4.ip_forward  //命令测试是否打开
+    // net.ipv4.ip_forward = 1
+
     port = 5433
     //postgres使用端口号默认5432
     max_connections = 1000
