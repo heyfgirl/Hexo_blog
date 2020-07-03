@@ -63,3 +63,14 @@ superagent
         // }, (err, res, body) => {
         //     console.log(res);
         // });
+
+superagent 如何模拟html的表单上传文件
+superagent
+   .post('/upload')
+   .field('user[name]', 'Tobi')
+   .field('user[email]', 'tobi@learnboost.com')
+   .field('friends[]', ['loki', 'jane'])
+   .attach('image', 'path/to/tobi.png',{
+           contentType: 'mime/type'
+   })
+   .then(callback);

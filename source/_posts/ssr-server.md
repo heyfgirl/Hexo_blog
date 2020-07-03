@@ -73,6 +73,23 @@ CentOS（7以上版本）:
 
     ./shadowsocks-all.sh
 ```
+或者
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+
+```
+ShadowsocksR 安装后，自动设置为 系统服务，所以支持使用服务来启动/停止等操作，同时支持开机启动。
+
+启动 ShadowsocksR：service ssrmu start
+停止 ShadowsocksR：service ssrmu stop
+重启 ShadowsocksR：service ssrmu restart
+查看 ShadowsocksR状态：service ssrmu status
+
+安装目录：/usr/local/shadowsocksr
+配置文件：/usr/local/shadowsocksr/user-config.json
+数据文件：/usr/local/shadowsocksr/mudb.json（这个就是记录你设定端口和密码的地方）
+启动文件：/etc/init.d/shadowsocksr/ssrmu
+
 
 之后我们可以配置一个通过TCP拥塞控制来进行加速的服务：
 ```
