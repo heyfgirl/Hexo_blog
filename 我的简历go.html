@@ -1,0 +1,1280 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        div,
+        p {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-size: 14px;
+            font-family: "microsoft yahei";
+            background-color: #ffffff
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout: fixed
+        }
+
+        th,
+        td {
+            font-size: 14px;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        img {
+            border: 0 none
+        }
+
+        .blue {
+            text-decoration: none;
+            color: #3c3d5d
+        }
+
+        .chead {
+            width: 1002px
+        }
+
+        .chead .logo {
+            width: 698px;
+            height: 90px
+        }
+
+        .chead .txt {
+            width: 152px;
+            height: 90px
+        }
+
+        .column {
+            width: 1002px;
+            line-height: 28px;
+            border: 1px solid #dedede
+        }
+
+        .column .hbox {
+            width: 54px;
+            height: 154px
+        }
+
+        .column .head {
+            display: block;
+            background-color: #fafafa
+        }
+
+        .column .box {
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 2px solid #f2f3f5
+        }
+
+        .column .box1 {
+            width: 100%;
+            word-wrap: break-word;
+            color: #ffffff;
+            background-color: #3f4160
+        }
+
+        .column .box2 {
+            width: 100%;
+            background-color: #f8f9fa
+        }
+
+        .column .tba {
+            width: 940px;
+            padding: 0 30px 15px
+        }
+
+        .column .tbb {
+            width: 940px;
+            padding: 0 30px
+        }
+
+        .column .tb1 {
+            width: 900px;
+            line-height: 28px;
+            color: #333333;
+            word-break: break-all;
+            padding: 0 20px
+        }
+
+        .column .tb2 {
+            width: 430px;
+            padding: 0 20px
+        }
+
+        .column .tb3 {
+            width: 900px;
+            padding: 15px 20px 15px 0
+        }
+
+        .column .gray,
+        .column .gray2 {
+            color: #999999;
+            word-break: break-all
+        }
+
+        .column .gray2 {
+            color: #666666
+        }
+
+        .column .plate1,
+        .column .plate2 {
+            width: 430px;
+            height: 54px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #818ba3
+        }
+
+        .column .plate1 {
+            width: 900px;
+            padding: 0 50px
+        }
+
+        .column .plate1 .f16 {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333333
+        }
+
+        .column .plate1 .f12 {
+            font-size: 12px;
+            font-weight: normal;
+            color: #999999
+        }
+
+        .column .keys,
+        .column .keys2 {
+            width: 85px;
+            line-height: 28px;
+            color: #666666
+        }
+
+        .column .keys2 {
+            width: 110px
+        }
+
+        .column .txt1,
+        .column .txt2,
+        .column .txt3 {
+            width: 815px;
+            line-height: 28px;
+            color: #333333;
+            word-break: break-all
+        }
+
+        .column .txt2 {
+            width: 345px
+        }
+
+        .column .txt3 {
+            width: auto;
+            max-width: 815px;
+            font-size: 14px;
+            font-weight: bold
+        }
+
+        .column .txt4 {
+            width: 305px;
+            color: #ffffff;
+            word-break: break-all
+        }
+
+        .column .infr {
+            width: 767px;
+            color: #ffffff;
+            table-layout: auto
+        }
+
+        .column .vam,
+        .column .grcha {
+            vertical-align: middle;
+            margin-left: 5px
+        }
+
+        .column .box1 .vam {
+            margin-right: 5px;
+            margin-left: 0
+        }
+
+        .column .name {
+            font-size: 24px;
+            padding-bottom: 18px
+        }
+
+        .column .icard {
+            color: #a1a3ae;
+            padding-bottom: 18px
+        }
+
+        .column .con {
+            border-top: 1px dotted #ddd
+        }
+
+        .column .pr20 {
+            width: 225px;
+            padding-right: 20px
+        }
+
+        .column .time {
+            width: 120px;
+            line-height: 28px;
+            color: #666666;
+            padding-left: 20px
+        }
+
+        .column .rtbox {
+            width: 765px;
+            line-height: 28px;
+            color: #333333;
+            padding: 0 20px 0 15px;
+            word-break: break-all
+        }
+
+        .column .hai,
+        .column .guan {
+            line-height: 18px;
+            font-size: 12px;
+            color: #ffffff;
+            vertical-align: text-top;
+            margin-left: 5px;
+            padding: 1px 3px;
+            background-color: #3cbe7f;
+            border-radius: 2px
+        }
+
+        .column .guan {
+            background-color: #ff9f20
+        }
+
+        .column .tag {
+            display: inline-block;
+            word-break: break-all;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .all {
+            color: #666;
+            padding: 10px 20px;
+            background-color: #fafafa
+        }
+
+        .column .tit {
+            width: 900px;
+            height: 40px;
+            color: #666666;
+            padding: 0 20px;
+            background-color: #f5f5f5
+        }
+
+        .column .p15 {
+            padding: 15px 0
+        }
+
+        .column .p5 {
+            display: inline-block;
+            color: #666666;
+            padding: 0 5px;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .cell .skill {
+            width: 165px;
+            text-align: right;
+            padding-right: 15px
+        }
+
+        .column .cell .skbg,
+        .column .cell .skco {
+            display: inline-block;
+            width: 245px;
+            height: 18px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #ffffff;
+            vertical-align: top;
+            margin-top: 6px;
+            background-color: #dddddd;
+            border-radius: 20px;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .cell .skco {
+            width: 235px;
+            font-style: normal;
+            margin-top: 0;
+            padding-left: 10px;
+            background-color: #ff9f20;
+            z-index: 3
+        }
+
+        .column .sl .skco {
+            width: 173px
+        }
+
+        .column .lh .skco {
+            width: 112px
+        }
+
+        .column .yb .skco {
+            width: 51px
+        }
+
+        .column .fbox strong {
+            font-size: 14px;
+            font-weight: bold
+        }
+
+        .column .cha {
+            font-size: 12px;
+            font-weight: normal;
+            color: #00457d;
+            margin-left: 5px
+        }
+
+        .column .cha:hover {
+            color: #ff6000
+        }
+
+        .column .email {
+            width: 330px
+        }
+
+        .eng td,
+        .eng .txt3,
+        .eng .fbox strong {
+            font-size: 13px;
+            font-family: 'Arial'
+        }
+
+        .eng .txt1,
+        .eng .rtbox,
+        .eng .phd {
+            width: 775px;
+            font-size: 13px;
+            font-family: 'Arial';
+            line-height: 28px
+        }
+
+        .eng .txt2 {
+            width: 305px
+        }
+
+        .eng .txt4 {
+            width: 245px
+        }
+
+        .eng .cell .txt3 {
+            width: 120px
+        }
+
+        .eng .time,
+        .eng .keys {
+            width: 110px;
+            font-size: 13px;
+            text-align: right
+        }
+
+        .eng .cell .skill {
+            width: 130px
+        }
+
+        .eng .phd {
+            padding-left: 145px
+        }
+
+        .eng .keys {
+            padding-right: 15px
+        }
+
+        .eng .pr20 {
+            width: 205px
+        }
+
+        .eng .pr20 .keys {
+            width: 100px
+        }
+
+        .eng .email {
+            width: 270px
+        }
+    </style>
+    <table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <!--个人描述-->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box1">
+                        <tbody>
+                            <tr>
+                                <td class="hbox" align="middle">
+                                    <!-- <img src="https://img01.51jobcdn.com/im/2016/resume/man.png" width="85" height="104"
+                                        class="head" alt="ͷ��"> -->
+                                </td>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" class="infr">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" class="name">王琼</td>
+                                                <td align="right" class="icard"></td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">
+                                                    <img class="vam"
+                                                        src="https://img01.51jobcdn.com/im/2016/resume/y1.png"
+                                                        width="20" height="20" /> 现居住杭州-西湖区 </td>
+                                                <td valign="top">
+                                                    <img class="vam"
+                                                        src="https://img01.51jobcdn.com/im/2016/resume/y2.png"
+                                                        width="20" height="20" />15000945059 </td>
+                                                <td valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0" class="email">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" width="25">
+                                                                    <img class="vam"
+                                                                        src="https://img01.51jobcdn.com/im/2016/resume/y3.png"
+                                                                        width="20" height="20" />
+                                                                </td>
+                                                                <td valign="top" class="txt4">heyfgirl@163.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" colspan="3">
+                                                    <p>
+                                                        <img class="vam"
+                                                            src="https://img01.51jobcdn.com/im/2016/resume/y4.png"
+                                                            width="20" height="20" />男<span class="p5">|</span>26 岁
+                                                        (1994/01/08)<span class="p5">|</span>4年工作经验<span
+                                                            class="p5">|</span> 目前正在找工作 </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--最近工作-->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box2">
+                        <tbody>
+                            <tr>
+                                <td class="tba">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" class="tb2">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <thead style="height:0">
+                                                            <tr>
+                                                                <td valign="top" class="keys"></td>
+                                                                <td valign="top" class="txt2"></td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td colspan="2" class="plate2">最近工作</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">职位：</td>
+                                                                <td valign="top" class="txt2">服务器开发工程师</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">公司：</td>
+                                                                <td valign="top" class="txt2">杭州中巨网络科技有限公司</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">行业：</td>
+                                                                <td valign="top" class="txt2">互联网</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td valign="top" class="tb2">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <thead style="height:0">
+                                                            <tr>
+                                                                <td valign="top" class="keys"></td>
+                                                                <td valign="top" class="txt2"></td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td colspan="2" class="plate2">学历/学位 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">专业：</td>
+                                                                <td valign="top" class="txt2">电子计算机信息安全技术
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">学校：</td>
+                                                                <td valign="top" class="txt2">河南农业大学
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="keys">学历/学位：</td>
+                                                                <td valign="top" class="txt2">本科</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--求职意向-->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">求职意向</td>
+                            </tr>
+                            <tr>
+                                <td class="tba">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <!-- <td class="tb2" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">����н�ʣ�</td>
+                                                                <td valign="top" class="txt2">
+                                                                    15000-20000Ԫ/��                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td> -->
+                                                <td class="tb2" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">地点：</td>
+                                                                <td valign="top" class="txt2">
+                                                                    <span class="tag">杭州</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb2" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">ְ职能/职位：</td>
+                                                                <td valign="top" class="txt2">
+                                                                    <span class="tag">Golang服务端开发工程师</span>
+                                                                    <span class="tag">&nbsp;&nbsp;</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="tb2" valign="top">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb2" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">工作类型：</td>
+                                                                <td valign="top" class="txt2">全职</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="tb2" valign="top">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb1" colspan="2">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <thead style="height:0">
+                                                            <tr>
+                                                                <td valign="top" class="keys"></td>
+                                                                <td valign="top" class="txt1"></td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">技能描述：</td>
+                                                                <td valign="top" class="txt1">
+                                                                    熟悉常用关系数据库，有（MySQL，PostgreSQL）的使用经验，懂得数据库性能优化，能有意识得改进查询性能。
+                                                                    <br>熟悉常用NoSQL数据库，MongoDB、Redis等。对redis数据缓存，订阅监听等，有相关使用经验。
+                                                                    <br>熟悉Linux操作系统以及相关命令，熟练使用Docker相关技术，熟悉Nginx相关代理配置，了解常用运维管理操作
+                                                                    <br>了解TCP/IP、HTTP协议,有websocket网络编程相关开发经验,有基础shell脚本读写能力
+                                                                    <br>1年以上Golang开发经验
+                                                                    <br>熟悉goroutine、channel、mutex、syncmap，熟悉gin等web开发框架。
+                                                                    <br>2年以上Node.js开发经验，熟悉node的eventloop，开发以及断点调试。
+                                                                    <br>熟悉Nodejs中间件相关开发。熟悉Koa，Express，Nuxt等相关Node框架。
+                                                                    <br>熟悉Vue，iview框架，能独立完成后台页面搭建及开发。
+                                                                    <br>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb1" colspan="2">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <thead style="height:0">
+                                                            <tr>
+                                                                <td valign="top" class="keys"></td>
+                                                                <td valign="top" class="txt1"></td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="keys">自我评价：</td>
+                                                                <td valign="top" class="txt1">
+                                                                    本人大学所学专业是电子计算机科学与技术，对编程有着浓厚兴趣；
+                                                                    <br>有多个软件，web，App等项目开发经验,有良好的编码风格,有独立解决问题的能力.
+                                                                    <br>具有较强的学习能力和归纳总结能力;并有记录blog的习惯，维护有个人学习记录的博客网站<a
+                                                                        href="https://blog.halfmy.com">【https://blog.halfmy.com】</a>
+                                                                    <br>能够快速融入到工作团队中。性格开朗，善于与人交流，协同完成工作.
+                                                                    <br>有良好的自学能力，对新技术能持续学习、保持好奇心，不断挖掘自身潜力
+                                                                    <br>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--工作经验-->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">工作经验</td>
+                            </tr>
+                            <tr>
+                                <td class="tbb">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tr>
+                                            <td class="p15">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2019/1-2020/8</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong class="txt3">杭州中巨网络科技有限公司</strong><span
+                                                                    class="p5"></span><span></span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- <td class="phd tb1" colspan="2">
+                                                                    <span></span><span class="gray">&nbsp;</span>
+                                                                </td> -->
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="phd tb1 gray2" colspan="2">后端开发工程师<span
+                                                                    class="p5">|</span>互联网<span class="p5"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">工作描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                业务需求中的服务器后端接口开发。
+                                                                                <br>
+                                                                                服务器平台的部署以及运维管理。
+                                                                                <br>
+                                                                                数据库，redis的部署以及运维。
+                                                                                <br>
+                                                                                gitlab项目分支管理等。
+                                                                                <br>
+                                                                                项目组成员任务分配。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2017/8-2018/12</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong class="txt3">育宁教育科技有限公司</strong><span
+                                                                    class="p5"></span><span></span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- <td class="phd tb1" colspan="2">
+                                                                    <span></span><span class="gray">&nbsp;</span>
+                                                                </td> -->
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="phd tb1 gray2" colspan="2">服务器开发工程师<span
+                                                                    class="p5">|</span>儿童教育</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">工作描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                CRM后台管理业务接口编写
+                                                                                <br>websocke通信业务的服务端编写
+                                                                                <br>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2016/10-2017/5</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong class="txt3">上海上业科技信息有限公司</strong><span
+                                                                    class="p5"></span><span></span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- <td class="phd tb1" colspan="2">
+                                                                    <span></span><span class="gray">&nbsp;</span>
+                                                                </td> -->
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="phd tb1 gray2" colspan="2">js开发【实习】<span
+                                                                    class="p5">|</span>软件开发</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">工作描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                web页面编写
+                                                                                <br>后端接口的编写以及与前端对接
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- 项目经验 -->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">项目经验</td>
+                            </tr>
+                            <tr>
+                                <td class="tba">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <!-- //怪兽boboAPP -->
+                                        <tr>
+                                            <td class="p15">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2019/7-2020/12</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>怪兽boboAPP</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">杭州中巨网络科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                该项目是一个长期维护的APP项目，一个融合了儿童才艺展示，兴趣培养，成长关怀，在线教育，品牌合作的多场景亲子平台。
+                                                                                <br>我负责了该APP在2019年整体重构的后端开发。使用的技术有Go，Node.js，等。
+                                                                                <br>项目架构方面我将多个模块功能分开。如：用户模块，订单模块，日志模块，权限模块，等。每个模块放在不同的服务器上部署。
+                                                                                <br>缓存信息同步方面我使用了redis发布/订阅模式，进行各模块信息交流同步。
+                                                                                <br>日志以及客户端错误统计方面我使用了，先使用nginx日志收集，然后脚本定时处理统计入数据库。
+                                                                                <br>数据库方面使用postgresql进行数据存储。
+                                                                                <br>用户模块独立开发，使用oAuth以及sso模式，将用户与其他产品模块间用户系统打通。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- //纸飞机 -->
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2019/3-2019/8</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>纸飞机APP</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">杭州中巨网络科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                该项目是一款用户上传视频展示的类似抖音的项目。
+                                                                                该项目使用了redis，postgresql，等技术。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                       <!-- bobo老师小程序 -->
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2020/6-2020/8</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>bobo老师小程序</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">杭州中巨网络科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                该项目是一款给老师学生搭建交流平台的对接微信小程序。
+                                                                                <br>我主要负责该项目的前期框架搭建，以及数据库相关部署业务
+                                                                                <br>还有教师与学生聊天系统的设计搭建以及开发
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2017/6-2018/12</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>成长保CRM系统</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">育宁教育科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                成长保APP以及整个公司的CRM系统。
+                                                                                <br>使用技术有mongodb数据库，mysql数据库，redis缓存技术等。开发语言为Node.js
+                                                                                <br>我主要负责业务代码的编写，以及部分功能的维护。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2018/6-2018/8</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>成长保招师代理项目</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">育宁教育科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                以成长保APP为基础的招聘代理老师的业务模块。对有兼职的老师进行消息推送，上课通知，单数统计等服务。
+                                                                                <br>我主要负责该项目全部的业务逻辑梳理以及功能上的后端开发。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2017/6-2018/12</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>socket通信项目</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">育宁教育科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                教师上课的socket信号指令推送服务
+                                                                                <br>该项目主要使用websocket技术
+                                                                                <br>我主要负责业务开发，以及业务功能维护
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2017/5-2017/6</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>落地页广告项目</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">育宁教育科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                自定义落地页编辑功能
+                                                                                <br>该项目将落地页系统统一，减少前段人员工作量，开发成统计的落地页编辑器直接交于运营人员使用。
+                                                                                <br>将在后台生成的静态页面编译保存，然后变成落地使用。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2016/10-2017/5</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>易享</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">上海上业信息科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                一个基于图书馆内网向外网的反向代理功能项目，
+                                                                                <br>我主要负责图书馆网站相关的爬虫脚本开发
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p15 con">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2016/10-2017/1</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>知识竞答项目</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">所属公司：</td>
+                                                                            <td valign="top" class="txt1">上海上业信息科技有限公司</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="keys">项目描述：</td>
+                                                                            <td valign="top" class="txt1">
+                                                                                一个h5页面的答题游戏
+                                                                                <br>有抢答和竞答两种功能
+                                                                                <br>我主要负责功能开发，以及前段页面开发。
+                                                                                <br>主要技术有socket，vue，等。
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--教育经历-->
+                    <table class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">教育经历</td>
+                            </tr>
+                            <tr>
+                                <td class="tba">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tr>
+                                            <td class="p15">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="time">2013/9-2017/6</td>
+                                                            <td valign="top" class="rtbox">
+                                                                <strong>河南农业大学</strong> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tb1" colspan="2">本科<span
+                                                                    class="p5">|</span>电子计算机信息安全技术</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--在校情况-->
+                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">在校情况</td>
+                            </tr>
+                            <tr>
+                                <td class="tbb">
+                                    <!--У������-->
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="tit">校内荣誉</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb3">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" class="time">2015/3</td>
+                                                                <td valign="top" class="rtbox">
+                                                                    <strong class="txt3">河南省信息安全对抗大赛 （三等奖）</strong>
+                                                                    <span></span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--У��ְ��-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
