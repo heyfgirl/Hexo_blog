@@ -1,7 +1,9 @@
 ---
 title: rinetd
-date: 2020-06-16 16:40:15
+date: 2020-02-16 16:40:15
 tags:
+- rinetd
+- 端口转发
 ---
 
 wget http://www.rinetd.com/download/rinetd.tar.gz

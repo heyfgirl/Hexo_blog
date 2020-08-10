@@ -1,6 +1,6 @@
 ---
 title: elasticsearch_and_kibana
-date: 2020-06-18 16:33:23
+date: 2020-03-18 16:33:23
 tags:
 ---
 

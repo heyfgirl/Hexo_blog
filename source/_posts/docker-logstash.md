@@ -1,6 +1,6 @@
 ---
 title: docker_logstash
-date: 2020-06-23 10:21:47
+date: 2020-03-23 10:21:47
 tags:
 ---
 
