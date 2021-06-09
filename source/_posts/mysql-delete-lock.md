@@ -2,7 +2,7 @@
 title: Mysql删除操作卡死
 date: 2021-06-09 16:57:12
 tags:
-- linux
+- mysql
 - 命令
 ---
 mysql中使用int类型来查询string字段，会进行隐式转换。
