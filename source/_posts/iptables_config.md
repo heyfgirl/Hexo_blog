@@ -53,6 +53,10 @@ tags:
 ### 开放XXXX端口
 ```
   $ iptables -A INPUT -p tcp --dport XXXX -j ACCEPT
+
+  -A默认是插入到尾部的，可以-I来插入到指定位置
+
+  iptables -I INPUT 3 -p tcp -m tcp --dport xxxx -j ACCEPT  
 ```
 ### 允许ping
 ```
