@@ -23,16 +23,21 @@ tags:
 go tool pprof -seconds=10 -http=:9999 http://localhost:6060/debug/pprof/heap
 `
 
-存在网络隔离问题，不能直接从开发机访问测试机、线上机器，或者测试机、线上机器没有安装go，那也可以这么做
+存在网络隔离问题，不能直接从开发机访问测试机、线上机器，或者测试机、线上机器没有安装go，那也可以先在容器中安装 curl 工具，然后将信息下载到本地查看
+
+例如
 ```
-curl http://localhost:6060/debug/pprof/heap?seconds=30 > heap.out 
+// 该命令主要查看内存信息，可查看具体哪些地方使用内存过高
+curl http://localhost:6060/debug/pprof/heap?seconds=600 > heap.out 
+<!-- 该命令主要查看 goroutine 信息 go 中内存泄漏大概率由 goroutine 未释放未被垃圾回收引起。首先应该查看 goroutine 个数是否异常 -->
+curl http://localhost:6060/debug/pprof/goroutine?debug=1 > goroutine.out 
 ```
 将 pprof 信息输出到文件  heap.out  然后将文件下载到本地执行
 
 ```
 go tool pprof -http=':8081'           \
-   -diff_base heap-new-16:22:04:N.out \  [对照的文件，非必需，可多次进行对比查看具体问题]
-   heap-new-17:32:38:N.out  [查看的文件]
+   -diff_base xxx.out \  [对照的文件，非必需，可多次进行对比查看具体问题]
+   heap.out  [查看的文件]
 
 ```
 
