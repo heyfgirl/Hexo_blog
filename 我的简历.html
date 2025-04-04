@@ -264,8 +264,8 @@
         .column .tag {
             display: inline-block;
             word-break: break-all;
-            #display: inline;
-            #zoom: 1
+            display: inline;
+            zoom: 1
         }
 
         .column .all {
@@ -290,8 +290,8 @@
             display: inline-block;
             color: #666666;
             padding: 0 5px;
-            #display: inline;
-            #zoom: 1
+            display: inline;
+            zoom: 1
         }
 
         .column .cell .skill {
@@ -312,8 +312,8 @@
             margin-top: 6px;
             background-color: #dddddd;
             border-radius: 20px;
-            #display: inline;
-            #zoom: 1
+            display: inline;
+            zoom: 1
         }
 
         .column .cell .skco {
@@ -860,11 +860,14 @@
                                                                         <tr>
                                                                             <td valign="top" class="keys">项目描述：</td>
                                                                             <td valign="top" class="txt1">
-                                                                                 慧星云
-                                                                                 <br>AI 生产力一站式平台,提供高性能GPU 算力租赁、在线模型训练、ComfyUI 工作台及AI 生图、视频生成等工具
-                                                                                 <br>主要负责该项目的后端开发，租赁订单系统，镜像存储系统，用户账号系统，操作日志，在线生图，数据集管理等
-                                                                                 <br>该项目主要技术用到了服务模块化，微服务架构，使用到技术栈有docker，mysql，redis，es，gin，koa等
-                                                                                 我负责了该项目后端主程工作
+                                                                                慧星云是一个专注于AI领域的一站式算力服务平台：
+                                                                                <br>- 采用微服务架构，基于Docker + K8s实现容器化部署和管理
+                                                                                <br>- 使用Gin(Go)构建核心服务，实现高并发和高可用
+                                                                                <br>- 采用MySQL + Redis + Elasticsearch实现数据存储和检索
+                                                                                <br>- 设计分布式任务调度系统，实现任务队列优先级管理和负载均衡
+                                                                                <br>- 优化订单系统，支持多种计费模式(按量、包时)和自动续费。
+                                                                                <br>- 支持余额，代金券，优惠券，折扣券，第三方，线下等多种付款方式。
+                                                                                <br>- 实现实时监控系统，对GPU使用率、显存占用等指标进行监控和告警。
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -906,9 +909,19 @@
                                                                         <tr>
                                                                             <td valign="top" class="keys">项目描述：</td>
                                                                             <td valign="top" class="txt1">
-                                                                                 又拍云平台控制台，CRM系统，元数据系统，流量聚合系统，账号系统，客服系统，账单出账系统，
-                                                                                <br>主要负责了该项目的后端主程接口开发,调优等
-                                                                                <br>使用的技术有Mysql，redis，nsq，Node.js koa以及自研框架<a href="https://github.com/ruojs/ruo">ruojs</a>，go，gin,docker等
+                                                                                又拍云是国内领先的云服务平台，我主要负责以下核心系统的开发：
+                                                                                <br>- 设计并实现新版控制台系统，采用微服务架构，提供CDN、对象存储、直播等产品的配置管理
+                                                                                <br>- 开发账单系统，支持按量付费、包年包月等多种计费模式，实现自动出账、自动扣费等功能
+                                                                                <br>- 构建元数据系统，统一管理用户配置信息，提供高性能的配置下发服务
+                                                                                <br>- 实现流量聚合系统，处理TB级日志数据，为计费和统计分析提供数据支持
+                                                                                <br>- 优化账号系统，支持子角色，多角色等权限管理，实现SSO单点登录
+                                                                                <br>- 开发客服工单系统，提供工单分配、处理、统计等功能
+                                                                                <br>- 开发CRM系统，提供客户管理,客户销售分配，公司角色管理，员工权限系统。财务管理(欠费，扣款，账单，发票，收入支出，提现等)
+                                                                                <br>
+                                                                                <br>- 使用Node.js(Koa)和Go(Gin)构建高性能服务，通过集群部署实现高可用
+                                                                                <br>- 采用MySQL分库分表 + Redis缓存架构，优化查询性能
+                                                                                <br>- 使用NSQ消息队列实现系统解耦，提高系统可扩展性
+                                                                                <br>- 通过性能优化，账单处理效率提升50%，配置下发延迟降低到毫秒级
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -950,12 +963,8 @@
                                                                         <tr>
                                                                             <td valign="top" class="keys">项目描述：</td>
                                                                             <td valign="top" class="txt1">
-                                                                                该项目是一个融合了儿童才艺展示，兴趣培养，成长关怀，在线教育，品牌合作的多场景亲子平台的APP项目。
-                                                                                <br>我负责了该APP在2019年整体重构的后端开发。使用的技术有Go，Node.js，gin，koa等。
-                                                                                <br>缓存信息同步方面我使用了nsq，进行各模块信息交流同步。
-                                                                                <br>日志以及客户端错误统计方面我使用了，先使用nginx日志收集，然后脚本定时处理统计入数据库。
-                                                                                <br>数据库方面使用postgresql进行数据存储。
-                                                                                <br>用户模块独立开发，使用oAuth以及sso模式，将用户与其他产品模块间用户系统打通。
+                                                                                我负责了该APP在2019年整体重构的后端开发。
+                                                                                <br>使用技术有 Mysql，redis，nsq，Node.js koa，nginx，postgresql等。
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
